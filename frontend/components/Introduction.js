@@ -90,15 +90,14 @@ export default function Introduction({ introduction }) {
           transition={{ enter: { duration: 0.4, delay: 1.0 } }}
         >
           <Stack isInline spacing={4}>
-            <Link href="#contact">
+            <Link href="https://calendly.com/wynn-solutions/web-e-commerce-problem-solving-session" isExternal>
               <Button
                 leftIcon={<FaPhoneAlt color="#000" />}
                 position="static"
                 size={isLargerThan800 ? 'md' : 'sm'}
                 background="gray.200"
                 color="black"
-                onClick={() => handleClick('introduction_scheduleCall')}
-              >
+                onClick={() => handleClick('introduction_scheduleCall')} >
                 Schedule Call
               </Button>
             </Link>
